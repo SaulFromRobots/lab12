@@ -1,0 +1,7 @@
+Linux:Debian,SLS,RedHat/ source for info https://web.itu.edu.tr/~tokerem/unix_linux.html
+Debian:Ubuntu
+SLS:Slackware
+Slackware:SuSE
+SuSE:SLES,openSUSE
+RedHat:Red Hat Enterprise (RHEL)
+Red Hat Enterprise (RHEL):CentOS,Fedora

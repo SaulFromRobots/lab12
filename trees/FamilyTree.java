@@ -118,9 +118,11 @@ public class FamilyTree {
 		// The substring of line that starts at char #0 and ends just before colonIndex. Check the API for
 		// class java.util.String, method substring(), if you need guidance.
 		String parent = line.substring(0,colonIndex);
+		// Extension to format to allow comments
+		int slashIndex = line.indexOf("/");
 		// The substring of line that starts just after colonIndex and goes through the end of
 		// the line. You'll use a different version of substring().
-		String childrenString = line.substring(colonIndex+1);
+		String childrenString = line.substring(colonIndex+1, slashIndex == -1 ? line.length() : slashIndex);
 		// Call childrenString.split(). Check the API for details. The result will be an array
 		// of strings, with the separating commas thrown away.
 		String[] childrenArray = childrenString.split(",");

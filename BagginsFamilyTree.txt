@@ -1,4 +1,6 @@
 Balbo:Mungo,Pansy,Ponto,Largo,Lily
+Pansy:Bobby,Falter,David/ My super creative hobbit names
+Falter:Sally,Betsey/ Slightly less creative hobbit names
 Mungo:Bungo,Belba,Longo,Linda,Bingo
 Ponto:Rosa,Polo
 Largo:Fosco
