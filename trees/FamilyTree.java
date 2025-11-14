@@ -37,7 +37,8 @@ public class FamilyTree {
 			for (TreeNode child : children) {
 				// If child.getNodeWithName(targetName) returns a non-null node,
 				// then that's the node we're looking for. Return it.
-				return child.getNodeWithName(targetName);
+				TreeNode result = child.getNodeWithName(targetName);
+				if (result != null) return result;
 			}
 
 			// Not found anywhere.
@@ -56,7 +57,7 @@ public class FamilyTree {
 			// recent to ancient. Expect a question about this on the final exam.
 			TreeNode pointer = this;
 			while (pointer != null) {
-				ancestors.add(pointer.name);
+				ancestors.add(pointer);
 				pointer = pointer.parent;
 			}
 
