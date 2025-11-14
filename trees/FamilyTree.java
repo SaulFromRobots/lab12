@@ -112,13 +112,17 @@ public class FamilyTree {
 		// Extract parent and array of children.
 		int colonIndex = ?? should be the index of the colon in line.
 		if (colonIndex < 0)
-			?? throw a TreeException with a useful message
-		String parent = ?? The substring of line that starts at char #0 and ends just before colonIndex. Check the API for 
-						   class java.util.String, method substring(), if you need guidance.
-		String childrenString = ?? The substring of line that starts just after colonIndex and goes through the end of
-								   the line. You'll use a different version of substring().
-		String[] childrenArray = ?? Call childrenString.split(). Check the API for details. The result will be an array
-									of strings, with the separating commas thrown away.
+			// throw a TreeException with a useful message
+			??
+		// The substring of line that starts at char #0 and ends just before colonIndex. Check the API for
+		// class java.util.String, method substring(), if you need guidance.
+		String parent = ??
+		// The substring of line that starts just after colonIndex and goes through the end of
+		// the line. You'll use a different version of substring().
+		String childrenString = ??
+		// Call childrenString.split(). Check the API for details. The result will be an array
+		// of strings, with the separating commas thrown away.
+		String[] childrenArray = ??
 
 		// Find parent node. If root is null then the tree is empty and the
 		// parent node must be constructed. Otherwise the parent node should be 
@@ -126,15 +130,17 @@ public class FamilyTree {
 		TreeNode parentNode;
 		if (root == null)
 			parentNode = root = new TreeNode(parent);
-		else
-		{
-			parentNode = root.?????  There's a method in Node that searches for a named node. 
-			??? If the parent node wasn't found, there must have been something wrong in the 
-				data file. Throw an exception.
+		else {
+			// There's a method in Node that searches for a named node.
+			parentNode = root.?????
+			// If the parent node wasn't found, there must have been something wrong in the
+			// data file. Throw an exception.
+			???
 		}
 
 		// Add child nodes to parentNode.
-		?? For each name in childrenArray, create a new node and add that node to parentNode.
+		// For each name in childrenArray, create a new node and add that node to parentNode.
+		??
 	}
 
 	// Returns the "deepest" node that is an ancestor of the node named name1, and
@@ -148,12 +154,16 @@ public class FamilyTree {
 	TreeNode getMostRecentCommonAncestor(String name1, String name2) throws TreeException
 	{
 		// Get nodes for input names.
-		TreeNode node1 = root.???		// node whose name is name1
+		// node whose name is name1
+		TreeNode node1 = root.???
 		if (node1 == null)
-			??? Throw a TreeException with a useful message
-		TreeNode node2 = root.???		// node whose name is name2
+			// Throw a TreeException with a useful message
+			???
+		// node whose name is name2
+		TreeNode node2 = root.???
 		if (node2 == null)
-			??? Throw TreeException with a useful message
+			// Throw TreeException with a useful message
+			???
 
 		// Get ancestors of node1 and node2.
 		ArrayList<TreeNode> ancestorsOf1 = ???
